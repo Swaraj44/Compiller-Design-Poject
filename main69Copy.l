@@ -32,7 +32,7 @@ void addToVariablesTable(char *varName) {
     newVariables->next = VariablesTable;
     VariablesTable = newVariables;
 }
-
+//swaraj 1907069
 
 
 %}
