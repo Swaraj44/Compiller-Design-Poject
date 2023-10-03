@@ -1,0 +1,94 @@
+single line comment
+
+multiple_line_comment
+
+
+
+
+header declaration
+Beginning of Main section
+
+
+
+Variable declaration for:  a
+Variable declaration for: b
+Number of variables: 2
+
+duplicate variable:  a
+Variable declaration for: c
+Variable declaration for: d
+Variable declaration for: e
+Variable declaration for: ck
+duplicate variable: ck
+Variable declaration for: f
+duplicate variable: d
+Number of variables: 5
+ 
+
+
+Value Assigned
+Value Assigned
+
+
+increment statement
+decrement statement
+
+
+Input Statement
+
+Output Statement
+
+Output Statement
+
+Input Statement
+
+Output Statement
+
+
+
+
+Addition Operation done
+
+
+
+
+While loop
+
+
+
+
+If Else Ladder Block
+
+
+
+
+
+FOR loop statement
+
+
+
+
+
+Switch Statement
+Case Statement
+DEFAULT
+
+
+
+Equal Comparation done
+
+Greater than Comparation done
+
+Less than Comparation done
+
+Not equal Comparation done
+
+
+
+
+
+
+Return statement
+
+
+Ending of Main section

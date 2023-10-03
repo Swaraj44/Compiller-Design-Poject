@@ -5,13 +5,6 @@
 
 
 
-      void agg(){
-                  printf("Checked!\n");
-                }
-
-
-
-
 struct Variables {
     char name[256];
     struct Variables *next;
@@ -40,9 +33,6 @@ void addToVariablesTable(char *varName) {
     VariablesTable = newVariables;
 }
 
-void printVariableDeclaration(char *vn) {
-    printf("Variable declaration for: %s\n", vn);
-}
 
 
 %}
@@ -187,6 +177,7 @@ unary_operator "inc"|"dec"
 
 
 
+
 "add"         { printf("Operator: add\n"); }
 "sub"         { printf("Operator: sub\n"); }
 "mul"         { printf("Operator: mul\n"); }
@@ -224,9 +215,22 @@ unary_operator "inc"|"dec"
 "default"[ ]+":"(.+)[;]	                                {printf("DEFAULT");}
 
 
-"when"[ ]*[(][ ]*{identifiers}*[ ]*()[ ]*{identifiers}*[ ]*[)][ \t\n]*[{][ \t\n]*.*[ \t\n]*[}] {
+"when"[ ]*[(][ ]*{identifiers}*[ ]*("-eq"|"-ne"|"-lt"|"-le"|"-gt"|"-ge")[ ]*{identifiers}*[ ]*[)][ \t\n]*[{][ \t\n]*.*[ \t\n]*[}] {
     printf("While loop\n");
 }
+
+
+
+"any"[ ]*[(][ ]*{identifiers}[ ]*("-eq"|"-ne"|"-lt"|"-le"|"-gt"|"-ge")[ ]*{identifiers}[ ]*[)][ \t]*"then"[ \t]*[{][ \t\n]*.*[ \t\n]*[}][ \t\n]*"also"[ \t\n]*[(][ ]*{identifiers}[ ]*("-eq"|"-ne"|"-lt"|"-le"|"-gt"|"-ge")[ ]*{identifiers}[ ]*[)][ \t]*"then"[ \t]*[{][ \t\n]*.*[ \t\n]*[}][ \t\n]*"or"[ \t\n]*[{][ \t\n]*.*[ \t\n]*[}] {
+    printf("If Else Ladder Block\n");
+}
+
+
+
+"FOR"[ ]*[(][ ]*{identifiers}[ ]*[,][ ]*{digits}[ ]*[,][ ]*{identifiers}[ ]*("-eq"|"-ne"|"-lt"|"-le"|"-gt"|"-ge")[ ]*({identifiers}|{digits})[ ]*[,][ ]*{identifiers}[ ]+("inc"|"dec")[)][ \t\n]*[{][ \t\n]*.*[ \t\n]*[}] {
+    printf("FOR loop statement\n");
+}
+
 
 
 
@@ -254,7 +258,7 @@ int main()
 	yyin = freopen("input.txt","r",stdin);
 	yyout = freopen("output.txt","w",stdout);
 
-        agg();
+       
 	yylex();
 	return 0;
 

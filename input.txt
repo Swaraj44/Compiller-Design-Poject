@@ -1,0 +1,83 @@
+## testing1
+
+!<  comments
+for
+multiline >!
+
+
+
+import <iostream>
+BEGIN:
+
+
+
+var int_i dec, a,b;
+var float_f dec, a,c,d,e,ck,ck,f,d; 
+
+
+b<-10;
+a <- b;
+
+
+inc a;
+b dec;
+
+
+ii>>a>>b;
+oo<<a<<b;
+oo<<a <<b;
+ii>>a;
+oo<< b;
+
+
+
+a<-a add 5;
+
+
+
+when (a -gt b){
+
+//statement
+
+}
+
+
+
+any (a -eq b) then{
+           //statement
+    }
+also (a -eq b) then{
+           //statement
+    } 
+or {
+ //statement
+}
+
+
+
+
+FOR(i ,0 ,i -lt b,i inc){
+ //statement
+}
+
+
+
+
+let x
+option 10: oo<<a<<el;
+default :   oo<<x<<el;
+
+
+
+cmp a -eq b: //statement ;
+cmp a -gt b: //statement ;
+cmp a -lt b: //statement ;
+cmp a -ne b: //statement ;
+
+
+
+
+
+return 0;
+
+END
