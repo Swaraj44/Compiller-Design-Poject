@@ -4,15 +4,14 @@ multiple_line_comment
 
 
 
-
 header declaration
+
 Beginning of Main section
 
 
 
 Variable declaration for:  a
 Variable declaration for: b
-Number of variables: 2
 
 duplicate variable:  a
 Variable declaration for: c
@@ -22,7 +21,6 @@ Variable declaration for: ck
 duplicate variable: ck
 Variable declaration for: f
 duplicate variable: d
-Number of variables: 5
  
 
 
@@ -52,7 +50,7 @@ Addition Operation done
 
 
 
-While loop
+While loop Statement
 
 
 
@@ -70,8 +68,6 @@ FOR loop statement
 
 
 Switch Statement
-Case Statement
-DEFAULT
 
 
 
@@ -87,8 +83,42 @@ Not equal Comparation done
 
 
 
+Array declaration Statement
+
+
+
+SORT statement
+
+FACTORIAL statement
+
+MAXNUMBER statement
+
+MINNUMBER statement
+
+SINFUNC statement
+
+COSFUNC statement
+
+TANFUNC statement
+
+REVERSE statement
+
+LOGFUNC statement
+
+GCDFUNC statement
+
+LCMFUNC statement
+
+POWERFUNC statement
+
+
 
 Return statement
 
 
 Ending of Main section
+
+
+Number of variables in Input Code: 8
+Number of keyword Used in Input Code: 47
+

@@ -5,8 +5,8 @@ for
 multiline >!
 
 
-
 import <iostream>
+
 BEGIN:
 
 
@@ -75,6 +75,34 @@ cmp a -lt b: //statement ;
 cmp a -ne b: //statement ;
 
 
+
+
+var int_i dec, array(10);
+
+
+SORT array;
+
+FACT 10;
+
+MAX (a,b);
+
+MIN (a,10);
+
+sin 10;
+
+cos c;
+
+tan 50;
+
+REV array;
+
+log 60;
+
+gcd (67,a);
+
+lcm(a,b);
+
+pow(a,b);
 
 
 
